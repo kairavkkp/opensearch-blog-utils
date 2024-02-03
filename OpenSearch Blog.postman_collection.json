@@ -1,0 +1,1013 @@
+{
+	"info": {
+		"_postman_id": "15e6c65f-80a4-4265-ad2e-26192a120f40",
+		"name": "OpenSearch Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17582563"
+	},
+	"item": [
+		{
+			"name": "1. Mappings",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9200/spotify-index/_mapping",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index",
+						"_mapping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mappings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9200/spotify-index/_mapping",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index",
+								"_mapping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "2278"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"spotify-index\": {\n        \"mappings\": {\n            \"properties\": {\n                \"acousticness_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"artist_count\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"artist_name\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"bpm\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"danceability_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"energy_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_apple_charts\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_apple_playlists\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_deezer_charts\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_deezer_playlists\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_shazam_charts\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_spotify_charts\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"in_spotify_playlists\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"instrumentalness_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"key\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"liveness_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"mode\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"released_day\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"released_month\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"released_year\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"speechiness_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"streams\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"track_name\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                },\n                \"valence_percentage\": {\n                    \"type\": \"text\",\n                    \"fields\": {\n                        \"keyword\": {\n                            \"type\": \"keyword\",\n                            \"ignore_above\": 256\n                        }\n                    }\n                }\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "2. Delete the Index",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9200/spotify-index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete the index",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9200/spotify-index",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "21"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "3. Create a fresh Index without Mappings",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9200/spotify-index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a Fresh Index",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9200/spotify-index",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"shards_acknowledged\": true,\n    \"index\": \"spotify-index\"\n}"
+				}
+			]
+		},
+		{
+			"name": "4. Update Mappings",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"properties\": {\n        \"acousticness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"artist_count\": {\n            \"type\": \"integer\"\n        },\n        \"bpm\": {\n            \"type\": \"float\"\n        },\n        \"danceability_percentage\": {\n            \"type\": \"float\"\n        },\n        \"energy_percentage\": {\n            \"type\": \"float\"\n        },\n        \"in_apple_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_deezer_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_deezer_playlists\": {\n            \"type\": \"integer\"\n        },\n        \"in_shazam_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_spotify_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_spotify_playlists\": {\n            \"type\": \"integer\"\n        },\n        \"instrumentalness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"liveness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"released_day\": {\n            \"type\": \"integer\"\n        },\n        \"released_month\": {\n            \"type\": \"integer\"\n        },\n        \"released_year\": {\n            \"type\": \"integer\"\n        },\n        \"speechiness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"streams\": {\n            \"type\": \"integer\"\n        },\n        \"valence_percentage\": {\n            \"type\": \"float\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/spotify-index/_mapping",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index",
+						"_mapping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Mappings",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"properties\": {\n        \"acousticness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"artist_count\": {\n            \"type\": \"integer\"\n        },\n        \"bpm\": {\n            \"type\": \"float\"\n        },\n        \"danceability_percentage\": {\n            \"type\": \"float\"\n        },\n        \"energy_percentage\": {\n            \"type\": \"float\"\n        },\n        \"in_apple_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_deezer_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_deezer_playlists\": {\n            \"type\": \"integer\"\n        },\n        \"in_shazam_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_spotify_charts\": {\n            \"type\": \"integer\"\n        },\n        \"in_spotify_playlists\": {\n            \"type\": \"integer\"\n        },\n        \"instrumentalness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"liveness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"released_day\": {\n            \"type\": \"integer\"\n        },\n        \"released_month\": {\n            \"type\": \"integer\"\n        },\n        \"released_year\": {\n            \"type\": \"integer\"\n        },\n        \"speechiness_percentage\": {\n            \"type\": \"float\"\n        },\n        \"streams\": {\n            \"type\": \"integer\"\n        },\n        \"valence_percentage\": {\n            \"type\": \"float\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/spotify-index/_mapping",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index",
+								"_mapping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "21"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "5. Delete the Index",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9200/spotify-index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete the index",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9200/spotify-index",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "21"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "6. Edge N-Gram",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"settings\": {\n        \"analysis\": {\n            \"tokenizer\": {\n                \"edge_ngram_tokenizer\": {\n                    \"type\": \"edge_ngram\",\n                    \"min_gram\": 2,\n                    \"max_gram\": 3,\n                    \"token_chars\": [\n                        \"letter\",\n                        \"digit\"\n                    ]\n                }\n            },\n            \"analyzer\": {\n                \"edge_ngram_analyzer\": {\n                    \"type\": \"custom\",\n                    \"tokenizer\": \"edge_ngram_tokenizer\",\n                    \"filter\": [\n                        \"lowercase\"\n                    ]\n                }\n            }\n        }\n    },\n    \"mappings\": {\n        \"properties\": {\n            \"track_name\": {\n                \"type\": \"text\",\n                \"analyzer\": \"edge_ngram_analyzer\",\n                \"fields\": {\n                    \"keyword\": {\n                        \"type\": \"keyword\",\n                        \"ignore_above\": 256\n                    }\n                }\n            },\n            \"acousticness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"artist_count\": {\n                \"type\": \"integer\"\n            },\n            \"bpm\": {\n                \"type\": \"float\"\n            },\n            \"danceability_percentage\": {\n                \"type\": \"float\"\n            },\n            \"energy_percentage\": {\n                \"type\": \"float\"\n            },\n            \"in_apple_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_deezer_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_deezer_playlists\": {\n                \"type\": \"integer\"\n            },\n            \"in_shazam_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_spotify_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_spotify_playlists\": {\n                \"type\": \"integer\"\n            },\n            \"instrumentalness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"liveness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"released_day\": {\n                \"type\": \"integer\"\n            },\n            \"released_month\": {\n                \"type\": \"integer\"\n            },\n            \"released_year\": {\n                \"type\": \"integer\"\n            },\n            \"speechiness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"streams\": {\n                \"type\": \"integer\"\n            },\n            \"valence_percentage\": {\n                \"type\": \"float\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/spotify-index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "6. Edge N-Gram",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"settings\": {\n        \"analysis\": {\n            \"tokenizer\": {\n                \"edge_ngram_tokenizer\": {\n                    \"type\": \"edge_ngram\",\n                    \"min_gram\": 2,\n                    \"max_gram\": 3,\n                    \"token_chars\": [\n                        \"letter\",\n                        \"digit\"\n                    ]\n                }\n            },\n            \"analyzer\": {\n                \"edge_ngram_analyzer\": {\n                    \"type\": \"custom\",\n                    \"tokenizer\": \"edge_ngram_tokenizer\",\n                    \"filter\": [\n                        \"lowercase\"\n                    ]\n                }\n            }\n        }\n    },\n    \"mappings\": {\n        \"properties\": {\n            \"track_name\": {\n                \"type\": \"text\",\n                \"analyzer\": \"edge_ngram_analyzer\",\n                \"fields\": {\n                    \"keyword\": {\n                        \"type\": \"keyword\",\n                        \"ignore_above\": 256\n                    }\n                }\n            },\n            \"acousticness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"artist_count\": {\n                \"type\": \"integer\"\n            },\n            \"bpm\": {\n                \"type\": \"float\"\n            },\n            \"danceability_percentage\": {\n                \"type\": \"float\"\n            },\n            \"energy_percentage\": {\n                \"type\": \"float\"\n            },\n            \"in_apple_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_deezer_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_deezer_playlists\": {\n                \"type\": \"integer\"\n            },\n            \"in_shazam_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_spotify_charts\": {\n                \"type\": \"integer\"\n            },\n            \"in_spotify_playlists\": {\n                \"type\": \"integer\"\n            },\n            \"instrumentalness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"liveness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"released_day\": {\n                \"type\": \"integer\"\n            },\n            \"released_month\": {\n                \"type\": \"integer\"\n            },\n            \"released_year\": {\n                \"type\": \"integer\"\n            },\n            \"speechiness_percentage\": {\n                \"type\": \"float\"\n            },\n            \"streams\": {\n                \"type\": \"integer\"\n            },\n            \"valence_percentage\": {\n                \"type\": \"float\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/spotify-index",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"shards_acknowledged\": true,\n    \"index\": \"spotify-index\"\n}"
+				}
+			]
+		},
+		{
+			"name": "7. Queries",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": 0,\n    \"size\": 25,\n    \"query\": {\n        \"bool\": {\n            \"must\": [\n                {\n                    \"range\": {\n                        \"energy_percentage\": {\n                            \"gte\": 60,\n                            \"lte\": 90,\n                            \"relation\": \"within\"\n                        }\n                    }\n                }\n            ],\n            \"filter\": [\n                {\n                    \"terms\": {\n                        \"key.keyword\": [\"E\", \"A\", \"F#\"]\n                    }\n                },\n                {\n                    \"terms\": {\n                        \"mode.keyword\": [\"Major\"]\n                    }\n                },\n                {\n                    \"query_string\": {\n                        \"query\": \"Taylor\",\n                        \"fields\": [\n                            \"track_name\",\n                            \"artist_name\"\n                        ]\n                    }\n                }\n            ]\n        }\n    },\n    \"sort\": [\n        {\n            \"key.keyword\": {\n                \"order\": \"desc\"\n            }\n        },\n        {\n            \"energy_percentage\": {\n                \"order\": \"asc\"\n            }\n        }\n    ],\n    \"track_scores\": true,\n    \"min_score\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/spotify-index/_search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index",
+						"_search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Queries",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"from\": 0,\n    \"size\": 25,\n    \"query\": {\n        \"bool\": {\n            \"must\": [\n                {\n                    \"range\": {\n                        \"energy_percentage\": {\n                            \"gte\": 60,\n                            \"lte\": 90,\n                            \"relation\": \"within\"\n                        }\n                    }\n                }\n            ],\n            \"filter\": [\n                {\n                    \"terms\": {\n                        \"key.keyword\": [\"E\", \"A\", \"F#\"]\n                    }\n                },\n                {\n                    \"terms\": {\n                        \"mode.keyword\": [\"Major\"]\n                    }\n                },\n                {\n                    \"query_string\": {\n                        \"query\": \"Taylor\",\n                        \"fields\": [\n                            \"track_name\",\n                            \"artist_name\"\n                        ]\n                    }\n                }\n            ]\n        }\n    },\n    \"sort\": [\n        {\n            \"key.keyword\": {\n                \"order\": \"desc\"\n            }\n        },\n        {\n            \"energy_percentage\": {\n                \"order\": \"asc\"\n            }\n        }\n    ],\n    \"track_scores\": true,\n    \"min_score\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/spotify-index/_search",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index",
+								"_search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "3015"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"took\": 54,\n    \"timed_out\": false,\n    \"_shards\": {\n        \"total\": 1,\n        \"successful\": 1,\n        \"skipped\": 0,\n        \"failed\": 0\n    },\n    \"hits\": {\n        \"total\": {\n            \"value\": 4,\n            \"relation\": \"eq\"\n        },\n        \"max_score\": 1,\n        \"hits\": [\n            {\n                \"_index\": \"spotify-index\",\n                \"_id\": \"xNNbbY0BTp1JnpuzKuck\",\n                \"_score\": 1,\n                \"_source\": {\n                    \"track_name\": \"You Belong With Me (Taylor\\ufffd\\ufffd\\ufffds Ve\",\n                    \"artist_name\": \"Taylor Swift\",\n                    \"artist_count\": 1,\n                    \"released_year\": 2021,\n                    \"released_month\": 4,\n                    \"released_day\": 9,\n                    \"in_spotify_playlists\": 2619,\n                    \"in_spotify_charts\": 12,\n                    \"streams\": \"350381515\",\n                    \"in_apple_playlists\": 47,\n                    \"in_apple_charts\": 90,\n                    \"in_deezer_playlists\": \"1\",\n                    \"in_deezer_charts\": 0,\n                    \"in_shazam_charts\": \"7\",\n                    \"bpm\": 130,\n                    \"key\": \"F#\",\n                    \"mode\": \"Major\",\n                    \"danceability_percentage\": 63,\n                    \"valence_percentage\": 49,\n                    \"energy_percentage\": 73,\n                    \"acousticness_percentage\": 5,\n                    \"instrumentalness_percentage\": 0,\n                    \"liveness_percentage\": 9,\n                    \"speechiness_percentage\": 3\n                },\n                \"sort\": [\n                    \"F#\",\n                    73\n                ]\n            },\n            {\n                \"_index\": \"spotify-index\",\n                \"_id\": \"GtNbbY0BTp1JnpuzKucj\",\n                \"_score\": 1,\n                \"_source\": {\n                    \"track_name\": \"I Can See You (Taylor\\ufffd\\ufffd\\ufffds Version) (From The \",\n                    \"artist_name\": \"Taylor Swift\",\n                    \"artist_count\": 1,\n                    \"released_year\": 2023,\n                    \"released_month\": 7,\n                    \"released_day\": 7,\n                    \"in_spotify_playlists\": 516,\n                    \"in_spotify_charts\": 38,\n                    \"streams\": \"52135248\",\n                    \"in_apple_playlists\": 73,\n                    \"in_apple_charts\": 119,\n                    \"in_deezer_playlists\": \"42\",\n                    \"in_deezer_charts\": 1,\n                    \"in_shazam_charts\": \"150\",\n                    \"bpm\": 123,\n                    \"key\": \"F#\",\n                    \"mode\": \"Major\",\n                    \"danceability_percentage\": 69,\n                    \"valence_percentage\": 82,\n                    \"energy_percentage\": 76,\n                    \"acousticness_percentage\": 6,\n                    \"instrumentalness_percentage\": 0,\n                    \"liveness_percentage\": 6,\n                    \"speechiness_percentage\": 3\n                },\n                \"sort\": [\n                    \"F#\",\n                    76\n                ]\n            },\n            {\n                \"_index\": \"spotify-index\",\n                \"_id\": \"JtNbbY0BTp1JnpuzKucj\",\n                \"_score\": 1,\n                \"_source\": {\n                    \"track_name\": \"Anti-Hero\",\n                    \"artist_name\": \"Taylor Swift\",\n                    \"artist_count\": 1,\n                    \"released_year\": 2022,\n                    \"released_month\": 10,\n                    \"released_day\": 21,\n                    \"in_spotify_playlists\": 9082,\n                    \"in_spotify_charts\": 56,\n                    \"streams\": \"999748277\",\n                    \"in_apple_playlists\": 242,\n                    \"in_apple_charts\": 142,\n                    \"in_deezer_playlists\": \"165\",\n                    \"in_deezer_charts\": 9,\n                    \"in_shazam_charts\": \"310\",\n                    \"bpm\": 97,\n                    \"key\": \"E\",\n                    \"mode\": \"Major\",\n                    \"danceability_percentage\": 64,\n                    \"valence_percentage\": 51,\n                    \"energy_percentage\": 63,\n                    \"acousticness_percentage\": 12,\n                    \"instrumentalness_percentage\": 0,\n                    \"liveness_percentage\": 19,\n                    \"speechiness_percentage\": 5\n                },\n                \"sort\": [\n                    \"E\",\n                    63\n                ]\n            },\n            {\n                \"_index\": \"spotify-index\",\n                \"_id\": \"CNNbbY0BTp1JnpuzKucj\",\n                \"_score\": 1,\n                \"_source\": {\n                    \"track_name\": \"Cruel Summer\",\n                    \"artist_name\": \"Taylor Swift\",\n                    \"artist_count\": 1,\n                    \"released_year\": 2019,\n                    \"released_month\": 8,\n                    \"released_day\": 23,\n                    \"in_spotify_playlists\": 7858,\n                    \"in_spotify_charts\": 100,\n                    \"streams\": \"800840817\",\n                    \"in_apple_playlists\": 116,\n                    \"in_apple_charts\": 207,\n                    \"in_deezer_playlists\": \"125\",\n                    \"in_deezer_charts\": 12,\n                    \"in_shazam_charts\": \"548\",\n                    \"bpm\": 170,\n                    \"key\": \"A\",\n                    \"mode\": \"Major\",\n                    \"danceability_percentage\": 55,\n                    \"valence_percentage\": 58,\n                    \"energy_percentage\": 72,\n                    \"acousticness_percentage\": 11,\n                    \"instrumentalness_percentage\": 0,\n                    \"liveness_percentage\": 11,\n                    \"speechiness_percentage\": 15\n                },\n                \"sort\": [\n                    \"A\",\n                    72\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "8. Scroll API - First call",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": 0,\n    \"size\": 1,\n    \"query\": {\n        \"bool\": {\n            \"must\": [\n                {\n                    \"range\": {\n                        \"energy_percentage\": {\n                            \"gte\": 60,\n                            \"lte\": 90,\n                            \"relation\": \"within\"\n                        }\n                    }\n                }\n            ],\n            \"filter\": [\n                {\n                    \"terms\": {\n                        \"key.keyword\": [\"E\", \"A\", \"F#\"]\n                    }\n                },\n                {\n                    \"terms\": {\n                        \"mode.keyword\": [\"Major\"]\n                    }\n                },\n                {\n                    \"query_string\": {\n                        \"query\": \"Taylor\",\n                        \"fields\": [\n                            \"track_name\",\n                            \"artist_name\"\n                        ]\n                    }\n                }\n            ]\n        }\n    },\n    \"sort\": [\n        {\n            \"key.keyword\": {\n                \"order\": \"desc\"\n            }\n        },\n        {\n            \"energy_percentage\": {\n                \"order\": \"asc\"\n            }\n        }\n    ],\n    \"track_scores\": true,\n    \"min_score\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/spotify-index/_search?scroll=2m",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index",
+						"_search"
+					],
+					"query": [
+						{
+							"key": "scroll",
+							"value": "2m"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "8. Scroll API - First call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"from\": 0,\n    \"size\": 1,\n    \"query\": {\n        \"bool\": {\n            \"must\": [\n                {\n                    \"range\": {\n                        \"energy_percentage\": {\n                            \"gte\": 60,\n                            \"lte\": 90,\n                            \"relation\": \"within\"\n                        }\n                    }\n                }\n            ],\n            \"filter\": [\n                {\n                    \"terms\": {\n                        \"key.keyword\": [\"E\", \"A\", \"F#\"]\n                    }\n                },\n                {\n                    \"terms\": {\n                        \"mode.keyword\": [\"Major\"]\n                    }\n                },\n                {\n                    \"query_string\": {\n                        \"query\": \"Taylor\",\n                        \"fields\": [\n                            \"track_name\",\n                            \"artist_name\"\n                        ]\n                    }\n                }\n            ]\n        }\n    },\n    \"sort\": [\n        {\n            \"key.keyword\": {\n                \"order\": \"desc\"\n            }\n        },\n        {\n            \"energy_percentage\": {\n                \"order\": \"asc\"\n            }\n        }\n    ],\n    \"track_scores\": true,\n    \"min_score\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/spotify-index/_search?scroll=2m",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index",
+								"_search"
+							],
+							"query": [
+								{
+									"key": "scroll",
+									"value": "2m"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "1020"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_scroll_id\": \"FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFmJYMXRfZmhMUkVTX21keW5LYXRtZXcAAAAAAAAAGRZXYmhVT2RLbVNvS1JZbC1naVhxbzhB\",\n    \"took\": 50,\n    \"timed_out\": false,\n    \"_shards\": {\n        \"total\": 1,\n        \"successful\": 1,\n        \"skipped\": 0,\n        \"failed\": 0\n    },\n    \"hits\": {\n        \"total\": {\n            \"value\": 4,\n            \"relation\": \"eq\"\n        },\n        \"max_score\": 1,\n        \"hits\": [\n            {\n                \"_index\": \"spotify-index\",\n                \"_id\": \"xNNbbY0BTp1JnpuzKuck\",\n                \"_score\": 1,\n                \"_source\": {\n                    \"track_name\": \"You Belong With Me (Taylor\\ufffd\\ufffd\\ufffds Ve\",\n                    \"artist_name\": \"Taylor Swift\",\n                    \"artist_count\": 1,\n                    \"released_year\": 2021,\n                    \"released_month\": 4,\n                    \"released_day\": 9,\n                    \"in_spotify_playlists\": 2619,\n                    \"in_spotify_charts\": 12,\n                    \"streams\": \"350381515\",\n                    \"in_apple_playlists\": 47,\n                    \"in_apple_charts\": 90,\n                    \"in_deezer_playlists\": \"1\",\n                    \"in_deezer_charts\": 0,\n                    \"in_shazam_charts\": \"7\",\n                    \"bpm\": 130,\n                    \"key\": \"F#\",\n                    \"mode\": \"Major\",\n                    \"danceability_percentage\": 63,\n                    \"valence_percentage\": 49,\n                    \"energy_percentage\": 73,\n                    \"acousticness_percentage\": 5,\n                    \"instrumentalness_percentage\": 0,\n                    \"liveness_percentage\": 9,\n                    \"speechiness_percentage\": 3\n                },\n                \"sort\": [\n                    \"F#\",\n                    73\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "9. Scroll API - Second call Onwards",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scroll\": \"10m\",\n    \"scroll_id\":\"FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFmJYMXRfZmhMUkVTX21keW5LYXRtZXcAAAAAAAAAJRZXYmhVT2RLbVNvS1JZbC1naVhxbzhB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/_search/scroll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_search",
+						"scroll"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Scroll API - Second call onwards",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"scroll\": \"10m\",\n    \"scroll_id\":\"FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFmJYMXRfZmhMUkVTX21keW5LYXRtZXcAAAAAAAAAGRZXYmhVT2RLbVNvS1JZbC1naVhxbzhB\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/_search/scroll",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_search",
+								"scroll"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "1034"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_scroll_id\": \"FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFmJYMXRfZmhMUkVTX21keW5LYXRtZXcAAAAAAAAAGRZXYmhVT2RLbVNvS1JZbC1naVhxbzhB\",\n    \"took\": 61,\n    \"timed_out\": false,\n    \"_shards\": {\n        \"total\": 1,\n        \"successful\": 1,\n        \"skipped\": 0,\n        \"failed\": 0\n    },\n    \"hits\": {\n        \"total\": {\n            \"value\": 4,\n            \"relation\": \"eq\"\n        },\n        \"max_score\": 1,\n        \"hits\": [\n            {\n                \"_index\": \"spotify-index\",\n                \"_id\": \"GtNbbY0BTp1JnpuzKucj\",\n                \"_score\": 1,\n                \"_source\": {\n                    \"track_name\": \"I Can See You (Taylor\\ufffd\\ufffd\\ufffds Version) (From The \",\n                    \"artist_name\": \"Taylor Swift\",\n                    \"artist_count\": 1,\n                    \"released_year\": 2023,\n                    \"released_month\": 7,\n                    \"released_day\": 7,\n                    \"in_spotify_playlists\": 516,\n                    \"in_spotify_charts\": 38,\n                    \"streams\": \"52135248\",\n                    \"in_apple_playlists\": 73,\n                    \"in_apple_charts\": 119,\n                    \"in_deezer_playlists\": \"42\",\n                    \"in_deezer_charts\": 1,\n                    \"in_shazam_charts\": \"150\",\n                    \"bpm\": 123,\n                    \"key\": \"F#\",\n                    \"mode\": \"Major\",\n                    \"danceability_percentage\": 69,\n                    \"valence_percentage\": 82,\n                    \"energy_percentage\": 76,\n                    \"acousticness_percentage\": 6,\n                    \"instrumentalness_percentage\": 0,\n                    \"liveness_percentage\": 6,\n                    \"speechiness_percentage\": 3\n                },\n                \"sort\": [\n                    \"F#\",\n                    76\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "10. Scroll API - Delete Cache",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scroll_id\":\"FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFmJYMXRfZmhMUkVTX21keW5LYXRtZXcAAAAAAAAAJRZXYmhVT2RLbVNvS1JZbC1naVhxbzhB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/_search/scroll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_search",
+						"scroll"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "10. Delete Scroll Cache",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"scroll_id\":\"FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFmJYMXRfZmhMUkVTX21keW5LYXRtZXcAAAAAAAAAGRZXYmhVT2RLbVNvS1JZbC1naVhxbzhB\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/_search/scroll",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_search",
+								"scroll"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "32"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"succeeded\": true,\n    \"num_freed\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "11. Aggregations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"size\": 0,\n    \"aggs\": {\n        \"total_tracks\": {\n            \"cardinality\": {\n                \"field\": \"track_name.keyword\"\n            }\n        },\n        \"total_artists\": {\n            \"cardinality\": {\n                \"field\": \"artist_name.keyword\"\n            }\n        },\n        \"max_streams\": {\n            \"max\": {\n                \"field\": \"streams\"\n            }\n        },\n        \"avg_bpm\": {\n            \"avg\": {\n                \"field\": \"bpm\"\n            }\n        },\n        \"min_energy_percentage\": {\n            \"min\": {\n                \"field\": \"energy_percentage\"\n            }\n        },\n        \"artist_name\": {\n            \"terms\": {\n                \"field\": \"artist_name.keyword\"\n            },\n            \"aggs\": {\n                \"songs_in_total_spotify_playlists\": {\n                    \"sum\": {\n                        \"field\": \"in_spotify_playlists\"\n                    }\n                },\n                \"songs_total_in_shazam_charts\": {\n                    \"sum\": {\n                        \"field\":\"in_shazam_charts\"\n                    }\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/spotify-index/_search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index",
+						"_search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "11. Aggregations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"size\": 0,\n    \"aggs\": {\n        \"total_tracks\": {\n            \"cardinality\": {\n                \"field\": \"track_name.keyword\"\n            }\n        },\n        \"total_artists\": {\n            \"cardinality\": {\n                \"field\": \"artist_name.keyword\"\n            }\n        },\n        \"max_streams\": {\n            \"max\": {\n                \"field\": \"streams\"\n            }\n        },\n        \"avg_bpm\": {\n            \"avg\": {\n                \"field\": \"bpm\"\n            }\n        },\n        \"min_energy_percentage\": {\n            \"min\": {\n                \"field\": \"energy_percentage\"\n            }\n        },\n        \"artist_name\": {\n            \"terms\": {\n                \"field\": \"artist_name.keyword\"\n            },\n            \"aggs\": {\n                \"songs_in_total_spotify_playlists\": {\n                    \"sum\": {\n                        \"field\": \"in_spotify_playlists\"\n                    }\n                }\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/spotify-index/_search",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index",
+								"_search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "1323"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"took\": 84,\n    \"timed_out\": false,\n    \"_shards\": {\n        \"total\": 1,\n        \"successful\": 1,\n        \"skipped\": 0,\n        \"failed\": 0\n    },\n    \"hits\": {\n        \"total\": {\n            \"value\": 862,\n            \"relation\": \"eq\"\n        },\n        \"max_score\": null,\n        \"hits\": []\n    },\n    \"aggregations\": {\n        \"total_tracks\": {\n            \"value\": 855\n        },\n        \"avg_bpm\": {\n            \"value\": 123.0800464037123\n        },\n        \"total_artists\": {\n            \"value\": 595\n        },\n        \"max_streams\": {\n            \"value\": 2132335812\n        },\n        \"artist_name\": {\n            \"doc_count_error_upper_bound\": 0,\n            \"sum_other_doc_count\": 710,\n            \"buckets\": [\n                {\n                    \"key\": \"Taylor Swift\",\n                    \"doc_count\": 33,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 111639\n                    }\n                },\n                {\n                    \"key\": \"The Weeknd\",\n                    \"doc_count\": 20,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 74410\n                    }\n                },\n                {\n                    \"key\": \"Bad Bunny\",\n                    \"doc_count\": 19,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 51317\n                    }\n                },\n                {\n                    \"key\": \"SZA\",\n                    \"doc_count\": 19,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 44539\n                    }\n                },\n                {\n                    \"key\": \"Harry Styles\",\n                    \"doc_count\": 15,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 64536\n                    }\n                },\n                {\n                    \"key\": \"Kendrick Lamar\",\n                    \"doc_count\": 11,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 26015\n                    }\n                },\n                {\n                    \"key\": \"Morgan Wallen\",\n                    \"doc_count\": 11,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 8947\n                    }\n                },\n                {\n                    \"key\": \"BTS\",\n                    \"doc_count\": 8,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 17953\n                    }\n                },\n                {\n                    \"key\": \"Drake, 21 Savage\",\n                    \"doc_count\": 8,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 18924\n                    }\n                },\n                {\n                    \"key\": \"Feid\",\n                    \"doc_count\": 8,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 14276\n                    }\n                }\n            ]\n        },\n        \"min_energy_percentage\": {\n            \"value\": 14\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "12. Composite Aggregations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"size\": 0,\n    \"aggs\": {\n        \"artist_name\": {\n            \"composite\": {\n                \"size\": 5,\n                \"sources\": [\n                    {\n                        \"artist_name\": {\n                            \"terms\": {\n                                \"field\": \"artist_name.keyword\",\n                                \"order\": \"desc\"\n                            }\n                        }\n                    }\n                ],\n                \"after\": {\n                    \"artist_name\": \"j-hope\"\n                }\n            },\n            \"aggs\": {\n                \"songs_in_total_spotify_playlists\": {\n                    \"sum\": {\n                        \"field\": \"in_spotify_playlists\"\n                    }\n                },\n                \"songs_total_in_shazam_charts\": {\n                    \"sum\": {\n                        \"field\": \"in_shazam_charts\"\n                    }\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:9200/spotify-index/_search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"spotify-index",
+						"_search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "12. Composite Aggregations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"size\": 0,\n    \"aggs\": {\n        \"artist_name\": {\n            \"composite\": {\n                \"size\": 5,\n                \"sources\": [\n                    {\n                        \"artist_name\": {\n                            \"terms\": {\n                                \"field\": \"artist_name.keyword\",\n                                \"order\": \"desc\"\n                            }\n                        }\n                    }\n                ],\n                \"after\": {\n                    \"artist_name\": \"j-hope\"\n                }\n            },\n            \"aggs\": {\n                \"songs_in_total_spotify_playlists\": {\n                    \"sum\": {\n                        \"field\": \"in_spotify_playlists\"\n                    }\n                }\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:9200/spotify-index/_search",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"spotify-index",
+								"_search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "content-length",
+							"value": "787"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"took\": 941,\n    \"timed_out\": false,\n    \"_shards\": {\n        \"total\": 1,\n        \"successful\": 1,\n        \"skipped\": 0,\n        \"failed\": 0\n    },\n    \"hits\": {\n        \"total\": {\n            \"value\": 1724,\n            \"relation\": \"eq\"\n        },\n        \"max_score\": null,\n        \"hits\": []\n    },\n    \"aggregations\": {\n        \"artist_name\": {\n            \"after_key\": {\n                \"artist_name\": \"Z\\ufffd\\ufffd Fe\"\n            },\n            \"buckets\": [\n                {\n                    \"key\": {\n                        \"artist_name\": \"girl in red\"\n                    },\n                    \"doc_count\": 2,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 13716\n                    }\n                },\n                {\n                    \"key\": {\n                        \"artist_name\": \"dennis, MC Kevin o Chris\"\n                    },\n                    \"doc_count\": 2,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 1462\n                    }\n                },\n                {\n                    \"key\": {\n                        \"artist_name\": \"d4vd\"\n                    },\n                    \"doc_count\": 4,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 11162\n                    }\n                },\n                {\n                    \"key\": {\n                        \"artist_name\": \"Z\\ufffd\\ufffd Neto & Crist\"\n                    },\n                    \"doc_count\": 2,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 1690\n                    }\n                },\n                {\n                    \"key\": {\n                        \"artist_name\": \"Z\\ufffd\\ufffd Fe\"\n                    },\n                    \"doc_count\": 2,\n                    \"songs_in_total_spotify_playlists\": {\n                        \"value\": 1202\n                    }\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
